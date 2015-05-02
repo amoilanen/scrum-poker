@@ -1,0 +1,11 @@
+{
+  "name": "Scrum Poker",
+  "description": "Provides a set of cards to use for planning poker in Scrum",
+  "launch_path": "/index.html",
+  "icons": {},
+  "developer": {
+    "name": "Anton Ivanov",
+    "url": "https://github.com/antivanov"
+  },
+  "permissions": {}
+}

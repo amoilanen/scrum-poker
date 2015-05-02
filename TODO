@@ -1,0 +1,9 @@
+- Show scrum cards in a grid like layout: 0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100, ?, coffee
+- On single tap a scrum card is shown with an animation
+- On double tap on a shown scrum card it is hidden with an animation
+- On slide left navigation to the previous card
+- On slide right navigation to the next card
+- Use some custom visually appealing font
+- Show attribution information, version, some brief info (About menu)
+- Make sure that the app works in Chrome as well
+- Allow to customize the background and appearance of the cards: few predefined themes?
