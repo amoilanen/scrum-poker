@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="64"
+   height="64"
+   id="svg2"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="poker.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
+     id="namedview52"
+     showgrid="false"
+     inkscape:zoom="9.0929515"
+     inkscape:cx="17.948593"
+     inkscape:cy="21.448745"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-nodes="true" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5654"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5656" />
+    </linearGradient>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter3896">
+      <feGaussianBlur
+         id="feGaussianBlur3898"
+         stdDeviation="0.042241016" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter4828">
+      <feGaussianBlur
+         stdDeviation="1"
+         in="SourceGraphic"
+         result="result0"
+         id="feGaussianBlur4830" />
+      <feTurbulence
+         result="result1"
+         numOctaves="4"
+         seed="4"
+         baseFrequency="0.057"
+         type="turbulence"
+         id="feTurbulence4832" />
+      <feDisplacementMap
+         in2="result1"
+         scale="0"
+         xChannelSelector="R"
+         yChannelSelector="A"
+         result="result91"
+         id="feDisplacementMap4834" />
+      <feComposite
+         in2="result91"
+         operator="out"
+         in="result0"
+         result="result2"
+         id="feComposite4836" />
+      <feComposite
+         in2="result2"
+         operator="arithmetic"
+         k1="0.1"
+         k2="0"
+         k3="1.2"
+         k4="0"
+         in="SourceAlpha"
+         result="result5"
+         id="feComposite4838" />
+      <feBlend
+         in2="result5"
+         mode="multiply"
+         result="fbSourceGraphic"
+         id="feBlend4840" />
+      <feGaussianBlur
+         result="result0"
+         in="fbSourceGraphic"
+         stdDeviation="3"
+         id="feGaussianBlur4842" />
+      <feSpecularLighting
+         specularExponent="15"
+         specularConstant="0.40000001"
+         surfaceScale="3"
+         lighting-color="#fee65d"
+         result="result1"
+         in="result0"
+         id="feSpecularLighting4844">
+        <fePointLight
+           z="20000"
+           y="-10000"
+           x="-5000"
+           id="fePointLight4846" />
+      </feSpecularLighting>
+      <feComposite
+         in2="fbSourceGraphic"
+         operator="in"
+         in="result1"
+         result="result2"
+         id="feComposite4848" />
+      <feComposite
+         in2="result2"
+         operator="arithmetic"
+         k1="-1"
+         k2="2.5"
+         k3="3.5"
+         k4="0"
+         in="fbSourceGraphic"
+         result="result4"
+         id="feComposite4850" />
+      <feBlend
+         in2="result4"
+         mode="multiply"
+         id="feBlend4852" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter4854">
+      <feGaussianBlur
+         stdDeviation="1"
+         in="SourceGraphic"
+         result="result0"
+         id="feGaussianBlur4856" />
+      <feTurbulence
+         result="result1"
+         numOctaves="4"
+         seed="4"
+         baseFrequency="0.057"
+         type="turbulence"
+         id="feTurbulence4858" />
+      <feDisplacementMap
+         in2="result1"
+         scale="0"
+         xChannelSelector="R"
+         yChannelSelector="A"
+         result="result91"
+         id="feDisplacementMap4860" />
+      <feComposite
+         in2="result91"
+         operator="out"
+         in="result0"
+         result="result2"
+         id="feComposite4862" />
+      <feComposite
+         in2="result2"
+         operator="arithmetic"
+         k1="0.1"
+         k2="0"
+         k3="1.2"
+         k4="0"
+         in="SourceAlpha"
+         result="result5"
+         id="feComposite4864" />
+      <feBlend
+         in2="result5"
+         mode="multiply"
+         result="fbSourceGraphic"
+         id="feBlend4866" />
+      <feGaussianBlur
+         result="result0"
+         in="fbSourceGraphic"
+         stdDeviation="3"
+         id="feGaussianBlur4868" />
+      <feSpecularLighting
+         specularExponent="15"
+         specularConstant="0.40000001"
+         surfaceScale="3"
+         lighting-color="#fee65d"
+         result="result1"
+         in="result0"
+         id="feSpecularLighting4870">
+        <fePointLight
+           z="20000"
+           y="-10000"
+           x="-5000"
+           id="fePointLight4872" />
+      </feSpecularLighting>
+      <feComposite
+         in2="fbSourceGraphic"
+         operator="in"
+         in="result1"
+         result="result2"
+         id="feComposite4874" />
+      <feComposite
+         in2="result2"
+         operator="arithmetic"
+         k1="-1"
+         k2="2.5"
+         k3="3.5"
+         k4="0"
+         in="fbSourceGraphic"
+         result="result4"
+         id="feComposite4876" />
+      <feBlend
+         in2="result4"
+         mode="multiply"
+         id="feBlend4878" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter4880">
+      <feGaussianBlur
+         stdDeviation="1"
+         in="SourceGraphic"
+         result="result0"
+         id="feGaussianBlur4882" />
+      <feTurbulence
+         result="result1"
+         numOctaves="4"
+         seed="4"
+         baseFrequency="0.057"
+         type="turbulence"
+         id="feTurbulence4884" />
+      <feDisplacementMap
+         in2="result1"
+         scale="0"
+         xChannelSelector="R"
+         yChannelSelector="A"
+         result="result91"
+         id="feDisplacementMap4886" />
+      <feComposite
+         in2="result91"
+         operator="out"
+         in="result0"
+         result="result2"
+         id="feComposite4888" />
+      <feComposite
+         in2="result2"
+         operator="arithmetic"
+         k1="0.1"
+         k2="0"
+         k3="1.2"
+         k4="0"
+         in="SourceAlpha"
+         result="result5"
+         id="feComposite4890" />
+      <feBlend
+         in2="result5"
+         mode="multiply"
+         result="fbSourceGraphic"
+         id="feBlend4892" />
+      <feGaussianBlur
+         result="result0"
+         in="fbSourceGraphic"
+         stdDeviation="3"
+         id="feGaussianBlur4894" />
+      <feSpecularLighting
+         specularExponent="15"
+         specularConstant="0.40000001"
+         surfaceScale="3"
+         lighting-color="#fee65d"
+         result="result1"
+         in="result0"
+         id="feSpecularLighting4896">
+        <fePointLight
+           z="20000"
+           y="-10000"
+           x="-5000"
+           id="fePointLight4898" />
+      </feSpecularLighting>
+      <feComposite
+         in2="fbSourceGraphic"
+         operator="in"
+         in="result1"
+         result="result2"
+         id="feComposite4900" />
+      <feComposite
+         in2="result2"
+         operator="arithmetic"
+         k1="-1"
+         k2="2.5"
+         k3="3.5"
+         k4="0"
+         in="fbSourceGraphic"
+         result="result4"
+         id="feComposite4902" />
+      <feBlend
+         in2="result4"
+         mode="multiply"
+         id="feBlend4904" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5662-7"
+       id="radialGradient5670-7"
+       cx="17.220339"
+       cy="1036.6334"
+       fx="17.220339"
+       fy="1036.6334"
+       r="8.7711868"
+       gradientTransform="matrix(1,0,0,1.479227,0,-496.78266)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5662-7">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5664-8" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop5666-4" />
+    </linearGradient>
+    <radialGradient
+       r="8.7711868"
+       fy="1036.6334"
+       fx="17.220339"
+       cy="1036.6334"
+       cx="17.220339"
+       gradientTransform="matrix(1,0,0,1.479227,-8.449152,-1520.4415)"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient5726"
+       xlink:href="#linearGradient5662-7"
+       inkscape:collect="always" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5662-8"
+       id="radialGradient5670-3"
+       cx="17.220339"
+       cy="1036.6334"
+       fx="17.220339"
+       fy="1036.6334"
+       r="8.7711868"
+       gradientTransform="matrix(1,0,0,1.479227,0,-496.78266)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5662-8">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5664-2" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop5666-2" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       id="filter4338"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.10372881"
+         id="feGaussianBlur4340" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4338-4">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.10372881"
+         id="feGaussianBlur4340-2" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4338-4-6">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.10372881"
+         id="feGaussianBlur4340-2-5" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-988.3622)"
+     id="layer1">
+    <rect
+       style="fill:#dfecf8;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:0.02, 0.02;stroke-dashoffset:0;filter:url(#filter4338)"
+       id="rect4003-4"
+       width="16.542374"
+       height="24.949152"
+       x="-12.34604"
+       y="1024.1156"
+       transform="matrix(1.7351598,-0.64993591,0.6369415,1.7705593,-628.39252,-816.99921)" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.1398201px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"
+       x="-332.89456"
+       y="967.07666"
+       id="text4007-5"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.92931923,-0.34809356,0.34113399,0.94827851,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4009-0"
+         x="-332.89456"
+         y="967.07666">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.29083014px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="-347.565"
+       y="915.31024"
+       id="text4007-5-9"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.90452934,-0.33880805,0.35048326,0.9742674,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4009-0-4"
+         x="-347.565"
+         y="915.31024">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.29083014px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="-323.51819"
+       y="951.98468"
+       id="text4007-5-9-7"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.90452934,-0.33880805,0.35048326,0.9742674,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4009-0-4-8"
+         x="-323.51819"
+         y="951.98468">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.8364296px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="-366.73178"
+       y="885.81238"
+       id="text4007-5-9-7-2"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.84251624,-0.31557991,0.37628047,1.045978,0,0)"><tspan
+         sodipodi:role="line"
+         x="-366.73178"
+         y="885.81238"
+         id="tspan3932">Scrum Poker</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.8364296px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="-366.11395"
+       y="851.76514"
+       id="text4007-5-9-7-2-8"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.84251624,-0.31557991,0.37628047,1.045978,0,0)"><tspan
+         sodipodi:role="line"
+         x="-366.11395"
+         y="851.76514"
+         id="tspan3932-9">Scrum Poker</tspan></text>
+    <rect
+       style="fill:#dfecf8;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:0.02, 0.02;stroke-dashoffset:0;filter:url(#filter4338-4)"
+       id="rect4003-4-1"
+       width="16.542374"
+       height="24.949152"
+       x="8.0051565"
+       y="1023.2813"
+       transform="matrix(1.8483706,0,0,1.8860797,2.5075568,-933.77101)" />
+    <rect
+       style="fill:#dfecf8;fill-opacity:1"
+       id="rect4005-2-9"
+       width="5.0125308"
+       height="4.3475738"
+       x="38.356686"
+       y="1027.6757" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.1398201px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"
+       x="24.821609"
+       y="1019.1224"
+       id="text4007-5-2"
+       sodipodi:linespacing="125%"
+       transform="scale(0.98995279,1.0101492)"><tspan
+         sodipodi:role="line"
+         id="tspan4009-0-2"
+         x="24.821609"
+         y="1019.1224">5</tspan><tspan
+         sodipodi:role="line"
+         x="24.821609"
+         y="1051.7972"
+         id="tspan4513" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.29083014px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="44.00174"
+       y="1002.642"
+       id="text4007-5-9-7-9"
+       sodipodi:linespacing="125%"
+       transform="scale(0.9635456,1.0378336)"><tspan
+         sodipodi:role="line"
+         id="tspan4009-0-4-8-2"
+         x="44.00174"
+         y="1002.642">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.83642936px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="27.839296"
+       y="932.99646"
+       id="text4007-5-9-7-2-3"
+       sodipodi:linespacing="125%"
+       transform="scale(0.89748639,1.114223)"><tspan
+         sodipodi:role="line"
+         x="27.839296"
+         y="932.99646"
+         id="tspan3932-6">Scrum Poker</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.83642936px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="28.457033"
+       y="898.94916"
+       id="text4007-5-9-7-2-8-3"
+       sodipodi:linespacing="125%"
+       transform="scale(0.89748639,1.114223)"><tspan
+         sodipodi:role="line"
+         x="28.457033"
+         y="898.94916"
+         id="tspan3932-9-5">Scrum Poker</tspan></text>
+    <rect
+       style="fill:#dfecf8;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:0.02, 0.02;stroke-dashoffset:0;filter:url(#filter4338-4-6)"
+       id="rect4003-4-1-2"
+       width="16.542374"
+       height="24.949152"
+       x="24.06155"
+       y="1024.1611"
+       transform="matrix(1.7318056,0.65918504,-0.64600573,1.7671366,654.30021,-832.19844)" />
+    <rect
+       style="fill:#dfecf8;fill-opacity:1"
+       id="rect4005-2-9-8"
+       width="5.0251331"
+       height="4.3370495"
+       x="377.97064"
+       y="950.36871"
+       transform="matrix(0.93458652,0.35573591,-0.34334355,0.93920988,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.1398201px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"
+       x="383.59622"
+       y="942.27258"
+       id="text4007-5-2-8"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.92752279,0.35304723,-0.34598862,0.9464454,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4009-0-2-3"
+         x="383.59622"
+         y="942.27258">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.29083014px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="388.56226"
+       y="891.16779"
+       id="text4007-5-9-1-3"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.90278081,0.34362957,-0.35547093,0.97238407,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4009-0-4-2-2"
+         x="388.56226"
+         y="891.16779">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.29083014px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="412.60904"
+       y="927.84222"
+       id="text4007-5-9-7-9-5"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.90278081,0.34362957,-0.35547093,0.97238407,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4009-0-4-8-2-7"
+         x="412.60904"
+         y="927.84222">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.8364296px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="423.57779"
+       y="863.32507"
+       id="text4007-5-9-7-2-3-2"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.84088755,0.32007086,-0.38163523,1.0439561,0,0)"><tspan
+         sodipodi:role="line"
+         x="423.57779"
+         y="863.32507"
+         id="tspan3932-6-9">Scrum Poker</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.8364296px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="424.19562"
+       y="829.27771"
+       id="text4007-5-9-7-2-8-3-3"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.84088755,0.32007086,-0.38163523,1.0439561,0,0)"><tspan
+         sodipodi:role="line"
+         x="424.19562"
+         y="829.27771"
+         id="tspan3932-9-5-8">Scrum Poker</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.29083014px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Italic"
+       x="20.21966"
+       y="965.69287"
+       id="text4007-5-9-7-9-2"
+       sodipodi:linespacing="125%"
+       transform="scale(0.9635456,1.0378336)"><tspan
+         sodipodi:role="line"
+         id="tspan4009-0-4-8-2-8"
+         x="20.21966"
+         y="965.69287">5</tspan></text>
+  </g>
+</svg>
