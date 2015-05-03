@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   cards.forEach(function(card) {
 
-    var cardElement = document.createElement('div');
+    var cardElementContainer = document.createElement('div');
+    cardElementContainer.setAttribute('class', 'card-cell');
+
+    var cardElement = document.createElement('span');
     cardElement.setAttribute('class', 'card');
 
     var cardLabel = document.createElement('span');
@@ -15,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
     cardLabel.appendChild(textElement);
 
     cardElement.appendChild(cardLabel);
-    cardsContainer.appendChild(cardElement);
+    cardElementContainer.appendChild(cardElement);
+    cardsContainer.appendChild(cardElementContainer);
   });
 
   console.log('Document loaded. event = ', event);

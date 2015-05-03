@@ -1,4 +1,6 @@
-- Show scrum cards in a grid-like layout: 0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100, ?, infinity, coffee
+- Show scrum cards in a grid-like layout: 0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40, 100, ?, infinity, coffee - DONE
+
+- For Infinity and Coffee icons are used
 - On single tap a scrum card is shown with an animation
 - On another single tap on a shown scrum card it is hidden with an animation
 - On slide left navigation to the previous card

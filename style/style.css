@@ -4,21 +4,32 @@
   bottom: 0;
   left: 0;
   right: 0;
+  padding-top: 2%;
+  background-color: rgba(24, 122, 143, 0.1);
 }
 
-.card {
+.card-cell {
   display: inline-block;
   width: 25%;
-  height: 25%;
+  height: 24%;
   box-sizing: border-box;
-  padding: 8px;
+  padding: 4px;
   text-align: center;
 }
 
-.card-label {
-  display: inline-block;
+.card {
+  display: table;
+  box-sizing: border-box;
   border: 1px solid #061e23;
   border-radius: 4px;
   height: 100%;
   width: 100%;
+  box-shadow: 2px 2px 4px 0 #061e23;
+  background-image: linear-gradient(to bottom right, #FFFFFF 0%, rgba(24, 122, 143, 0.3) 100%);
+}
+
+.card-label {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 35px;
 }
