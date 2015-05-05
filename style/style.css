@@ -6,6 +6,8 @@
   right: 0;
   padding-top: 2%;
   background-color: rgba(24, 122, 143, 0.1);
+  min-width: 200px;
+  min-height: 200px;
 }
 
 .card-cell {
@@ -26,10 +28,18 @@
   width: 100%;
   box-shadow: 2px 2px 4px 0 #061e23;
   background-image: linear-gradient(to bottom right, #FFFFFF 0%, rgba(24, 122, 143, 0.3) 100%);
+  max-width: 200px;
+  max-height: 400px;
 }
 
 .card-label {
   display: table-cell;
   vertical-align: middle;
   font-size: 35px;
+}
+
+@media (max-width: 310px) {
+  .card-label {
+    font-size: 20px;
+  }
 }
