@@ -25,6 +25,16 @@
       cardLabel.appendChild(cardImage);
     }
     rendition.appendChild(cardElement);
+
+    cardElement.addEventListener('click', function(event) {
+      cardElement.classList.toggle('selected');
+    });
+    cardElement.addEventListener('touchend', function(event) {
+      cardElement.classList.toggle('selected');
+    });
+
+    //TODO: Swipe left/right
+
     return rendition;
   };
 
