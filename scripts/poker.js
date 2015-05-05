@@ -1,26 +1,57 @@
-var cards = ['?', '0', '1/2', '1', '2', '3', '5', '8', '13', '20', '40', '100', 'inf', 'coffee'];
+(function(host) {
+
+  function Card(options) {
+    this.label = options.label;
+    this.icon = options.icon;
+  }
+
+  Card.prototype.render = function() {
+    var rendition = document.createElement('div');
+    var cardElement = document.createElement('span');
+    var cardLabel = document.createElement('span');
+
+    rendition.setAttribute('class', 'card-cell');
+    cardLabel.setAttribute('class', 'card-label');
+    cardElement.setAttribute('class', 'card');
+    cardElement.appendChild(cardLabel);
+    if (this.label) {
+      var text = document.createTextNode(this.label);
+
+      cardLabel.appendChild(text);
+    } else if (this.icon) {
+      var cardImage = document.createElement('img');
+
+      cardImage.setAttribute('src', this.icon);
+      cardLabel.appendChild(cardImage);
+    }
+    rendition.appendChild(cardElement);
+    return rendition;
+  };
+
+  host.Card = Card;
+})(this);
+
+var cards = [
+  new Card({label: '?'}),
+  new Card({label: '0'}),
+  new Card({label: '1/2'}),
+  new Card({label: '1'}),
+  new Card({label: '2'}),
+  new Card({label: '3'}),
+  new Card({label: '5'}),
+  new Card({label: '8'}),
+  new Card({label: '13'}),
+  new Card({label: '20'}),
+  new Card({label: '40'}),
+  new Card({label: '100'}),
+  new Card({icon: 'images/infinity.svg'}),
+  new Card({icon: 'images/coffee_cup.svg'})
+];
 
 document.addEventListener('DOMContentLoaded', function(event) {
   var cardsContainer = document.querySelector('#cardsContainer');
 
   cards.forEach(function(card) {
-
-    var cardElementContainer = document.createElement('div');
-    cardElementContainer.setAttribute('class', 'card-cell');
-
-    var cardElement = document.createElement('span');
-    cardElement.setAttribute('class', 'card');
-
-    var cardLabel = document.createElement('span');
-    cardLabel.setAttribute('class', 'card-label');
-
-    var textElement = document.createTextNode(card);
-    cardLabel.appendChild(textElement);
-
-    cardElement.appendChild(cardLabel);
-    cardElementContainer.appendChild(cardElement);
-    cardsContainer.appendChild(cardElementContainer);
+    cardsContainer.appendChild(card.render());
   });
-
-  console.log('Document loaded. event = ', event);
 }, false);

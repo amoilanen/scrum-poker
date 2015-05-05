@@ -32,6 +32,10 @@
   max-height: 400px;
 }
 
+.card img {
+  width: 50%;
+}
+
 .card-label {
   display: table-cell;
   vertical-align: middle;
