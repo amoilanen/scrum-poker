@@ -3,17 +3,20 @@
   function Card(options) {
     this.label = options.label;
     this.icon = options.icon;
+    this.deck = null;
+    this.cardElement = null;
   }
 
   Card.prototype.render = function() {
+    var self = this;
     var rendition = document.createElement('div');
-    var cardElement = document.createElement('span');
+    this.cardElement = document.createElement('span');
     var cardLabel = document.createElement('span');
 
     rendition.setAttribute('class', 'card-cell');
     cardLabel.setAttribute('class', 'card-label');
-    cardElement.setAttribute('class', 'card');
-    cardElement.appendChild(cardLabel);
+    this.cardElement.setAttribute('class', 'card');
+    this.cardElement.appendChild(cardLabel);
     if (this.label) {
       var text = document.createTextNode(this.label);
 
@@ -24,15 +27,18 @@
       cardImage.setAttribute('src', this.icon);
       cardLabel.appendChild(cardImage);
     }
-    rendition.appendChild(cardElement);
-
-    var touchStart;
-    var touchEnd;
-
-    cardElement.addEventListener('click', function(event) {
-      cardElement.classList.toggle('selected');
+    rendition.appendChild(this.cardElement);
+    this.cardElement.addEventListener('click', function(event) {
+      self.toggle();
     });
     return rendition;
+  };
+
+  Card.prototype.toggle = function() {
+    this.cardElement.classList.toggle('selected');
+    if (this.cardElement.classList.contains('selected')) {
+      this.deck.activeCard = this;
+    }
   };
 
   host.Card = Card;
@@ -41,26 +47,53 @@
 (function(host) {
 
   function Deck(cards) {
+    var self = this;
+
+    this.activeCard = null;
     this.cards = cards;
+    this.cards.forEach(function(card) {
+      card.deck = self;
+    });
   }
 
   Deck.prototype.init = function() {
+    var self = this;
+    var touchStart;
+
     document.addEventListener('touchstart', function(event) {
-      console.log('touch start', event.touches[0]);
+      //console.log('touch start', event.touches[0]);
       touchStart = event.targetTouches[0];
     });
+    document.addEventListener('touchmove', function(event) {
+      //console.log('touch move', event.touches[0]);
+      var touchCurrent = event.touches[0];
+      //self.activeCard.cardElement.style.left = (touchCurrent.clientX - touchStart.clientX) + 'px';
+    });
     document.addEventListener('touchend', function(event) {
-      console.log('touch end', event.touches[0]);
-      touchEnd = event.changedTouches[0];
+      var currentCardIndex = self.cards.indexOf(self.activeCard);
+      var nextCardIndex;
+      //console.log('touch end', event.touches[0]);
+      var touchEnd = event.changedTouches[0];
 
       var swipeDeltaX = touchEnd.clientX - touchStart.clientX;
 
-      if (swipeDeltaX > 5) {
+      if (swipeDeltaX > 15) {
         console.log('left');
-      } else if (swipeDeltaX < -5) {
+        nextCardIndex = currentCardIndex - 1;
+        if (nextCardIndex < 0) {
+          nextCardIndex = self.cards.length - 1;
+        }
+        self.activeCard.toggle();
+        self.cards[nextCardIndex].toggle();
+      } else if (swipeDeltaX < -15) {
         console.log('right');
+        nextCardIndex = currentCardIndex + 1;
+        if (nextCardIndex >= self.cards.length) {
+          nextCardIndex = 0;
+        }
+        self.activeCard.toggle();
+        self.cards[nextCardIndex].toggle();
       }
-      //TODO: Do the actual swiping
     });
   };
 
