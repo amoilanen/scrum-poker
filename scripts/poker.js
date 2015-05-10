@@ -26,19 +26,53 @@
     }
     rendition.appendChild(cardElement);
 
+    var touchStart;
+    var touchEnd;
+
     cardElement.addEventListener('click', function(event) {
       cardElement.classList.toggle('selected');
     });
-    cardElement.addEventListener('touchend', function(event) {
-      cardElement.classList.toggle('selected');
-    });
-
-    //TODO: Swipe left/right
-
     return rendition;
   };
 
   host.Card = Card;
+})(this);
+
+(function(host) {
+
+  function Deck(cards) {
+    this.cards = cards;
+  }
+
+  Deck.prototype.init = function() {
+    document.addEventListener('touchstart', function(event) {
+      console.log('touch start', event.touches[0]);
+      touchStart = event.targetTouches[0];
+    });
+    document.addEventListener('touchend', function(event) {
+      console.log('touch end', event.touches[0]);
+      touchEnd = event.changedTouches[0];
+
+      var swipeDeltaX = touchEnd.clientX - touchStart.clientX;
+
+      if (swipeDeltaX > 5) {
+        console.log('left');
+      } else if (swipeDeltaX < -5) {
+        console.log('right');
+      }
+      //TODO: Do the actual swiping
+    });
+  };
+
+  Deck.prototype.render = function() {
+    var cardsContainer = document.querySelector('#cardsContainer');
+
+    this.cards.forEach(function(card) {
+      cardsContainer.appendChild(card.render());
+    });
+  };
+
+  host.Deck = Deck;
 })(this);
 
 var cards = [
@@ -57,11 +91,9 @@ var cards = [
   new Card({icon: 'images/infinity.svg'}),
   new Card({icon: 'images/coffee_cup.svg'})
 ];
+var deck = new Deck(cards);
 
+deck.init();
 document.addEventListener('DOMContentLoaded', function(event) {
-  var cardsContainer = document.querySelector('#cardsContainer');
-
-  cards.forEach(function(card) {
-    cardsContainer.appendChild(card.render());
-  });
+  deck.render();
 }, false);

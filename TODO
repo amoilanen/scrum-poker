@@ -2,12 +2,22 @@
 - For Infinity and Coffee icons are used - DONE
 - On single tap a scrum card is shown with an animation - DONE
 - On another single tap on a shown scrum card it is hidden with an animation - DONE
+- Deploy to the phone - DONE
 
 - On slide left navigation to the previous card
 - On slide right navigation to the next card
-- Use some custom visually appealing font
-- Deploy to the phone
+
+- Visual adjustments
+  -- Use some custom visually appealing font
+  -- Labels should be larger on cards?
+  -- Horizontal/vertical alignment issues
+  -- Show small numbers at the top left/bottom right corners
+
+- Animations
+
 - Show attribution information, version, some brief info (About menu)
 - Make sure that the app works in Chrome as well
 - Allow to customize the background and appearance of the cards: few predefined themes?
 - Tests and some build infrastructure for the app?
+- Publish to the store
+  -- Provide a proper icon
