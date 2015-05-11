@@ -67,7 +67,9 @@
     document.addEventListener('touchmove', function(event) {
       //console.log('touch move', event.touches[0]);
       var touchCurrent = event.touches[0];
-      //self.activeCard.cardElement.style.left = (touchCurrent.clientX - touchStart.clientX) + 'px';
+      //var shiftX = Math.min(touchCurrent.clientX - touchStart.clientX, 5);
+
+      //self.activeCard.cardElement.style.left = shiftX + 'px';
     });
     document.addEventListener('touchend', function(event) {
       var currentCardIndex = self.cards.indexOf(self.activeCard);
