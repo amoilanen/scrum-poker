@@ -1,37 +1,16 @@
 (function(host) {
 
-  function Card(options) {
-    this.label = options.label;
-    this.icon = options.icon;
-    this.deck = null;
-    this.cardElement = null;
+  function Card(deck, cardElement) {
+    this.deck = deck;
+    this.cardElement = cardElement;
   }
 
-  Card.prototype.render = function() {
+  Card.prototype.init = function() {
     var self = this;
-    var rendition = document.createElement('div');
-    this.cardElement = document.createElement('span');
-    var cardLabel = document.createElement('span');
 
-    rendition.setAttribute('class', 'card-cell');
-    cardLabel.setAttribute('class', 'card-label');
-    this.cardElement.setAttribute('class', 'card');
-    this.cardElement.appendChild(cardLabel);
-    if (this.label) {
-      var text = document.createTextNode(this.label);
-
-      cardLabel.appendChild(text);
-    } else if (this.icon) {
-      var cardImage = document.createElement('img');
-
-      cardImage.setAttribute('src', this.icon);
-      cardLabel.appendChild(cardImage);
-    }
-    rendition.appendChild(this.cardElement);
     this.cardElement.addEventListener('click', function(event) {
       self.toggle();
     });
-    return rendition;
   };
 
   Card.prototype.toggle = function() {
@@ -50,10 +29,7 @@
     var self = this;
 
     this.activeCard = null;
-    this.cards = cards;
-    this.cards.forEach(function(card) {
-      card.deck = self;
-    });
+    this.cards = [];
   }
 
   Deck.prototype.init = function() {
@@ -97,38 +73,26 @@
         self.cards[nextCardIndex].toggle();
       }
     });
+    this._readCards();
   };
 
-  Deck.prototype.render = function() {
-    var cardsContainer = document.querySelector('#cardsContainer');
+  Deck.prototype._readCards = function() {
+    var self = this;
+    var cardElements = [].slice.call(document.querySelectorAll('#cardsContainer span.card'));
 
-    this.cards.forEach(function(card) {
-      cardsContainer.appendChild(card.render());
+    cardElements.forEach(function(cardElement) {
+      var card = new Card(self, cardElement);
+
+      card.init();
+      self.cards.push(card);
     });
   };
 
   host.Deck = Deck;
 })(this);
 
-var cards = [
-  new Card({label: '?'}),
-  new Card({label: '0'}),
-  new Card({label: '1/2'}),
-  new Card({label: '1'}),
-  new Card({label: '2'}),
-  new Card({label: '3'}),
-  new Card({label: '5'}),
-  new Card({label: '8'}),
-  new Card({label: '13'}),
-  new Card({label: '20'}),
-  new Card({label: '40'}),
-  new Card({label: '100'}),
-  new Card({icon: 'images/infinity.svg'}),
-  new Card({icon: 'images/coffee_cup.svg'})
-];
-var deck = new Deck(cards);
+var deck = new Deck();
 
-deck.init();
 document.addEventListener('DOMContentLoaded', function(event) {
-  deck.render();
+  deck.init();
 }, false);
