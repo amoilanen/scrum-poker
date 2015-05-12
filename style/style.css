@@ -37,10 +37,12 @@ body {
   border-radius: 4px;
   height: 100%;
   width: 100%;
-  box-shadow: 2px 2px 4px 0 #061e23;
+  box-shadow: 3px 3px 5px 0 #061e23;
   background-image: linear-gradient(to bottom right, #FFFFFF 0%, #789A9F 100%);
   max-width: 200px;
   max-height: 400px;
+  min-height: 25px;
+  min-width: 25px;
 }
 
 .card.selected {
@@ -53,17 +55,14 @@ body {
   max-height: 100%;
 }
 
-.card.selected .card-label {
-  font-size: 150px;
-}
-
 .card:hover {
   cursor: pointer;
 }
 
 .card:active {
   background-image: linear-gradient(to bottom right, #FFFFFF 0%, #789A9F 100%);
-  box-shadow: 1px 1px 2px 0 #061e23;
+  box-shadow: 1px 1px 5px 0 #061e23;
+  transform: translate(2px, 2px);
 }
 
 .card img {
@@ -73,7 +72,6 @@ body {
 .card-label {
   display: table-cell;
   vertical-align: middle;
-  font-size: 35px;
 }
 
 .card-label.infinity,
@@ -91,17 +89,61 @@ body {
   background-image: url(/images/coffee_cup.svg);
 }
 
-@media (max-width: 310px) {
-  .card-label {
-    font-size: 20px;
-  }
-  .card.selected .card-label {
-    font-size: 100px;
-  }
+
+/*
+ * Font size.
+ */
+.card-label {
+  font-size: 17.5vw;
+  line-height: 17.5vw;
 }
 
-@media (max-width: 200px) {
+.card.selected .card-label {
+  font-size: 70vw;
+  line-height: 70vw;
+}
+
+.card-label.medium-label {
+  font-size: 15vw;
+}
+
+.card.selected .card-label.medium-label {
+  font-size: 60vw;
+}
+
+.card-label.large-label {
+  font-size: 12.5vw;
+}
+
+.card.selected .card-label.large-label {
+  font-size: 50vw;
+}
+
+@media all and (orientation: landscape) {
+
+  .card-label {
+    font-size: 17.5vh;
+    line-height: 17.5vh;
+  }
+
   .card.selected .card-label {
-    font-size: 50px;
+    font-size: 70vh;
+    line-height: 70vh;
+  }
+
+  .card-label.medium-label {
+    font-size: 15vh;
+  }
+
+  .card.selected .card-label.medium-label {
+    font-size: 60vh;
+  }
+
+  .card-label.large-label {
+    font-size: 12.5vh;
+  }
+
+  .card.selected .card-label.large-label {
+    font-size: 50vh;
   }
 }
