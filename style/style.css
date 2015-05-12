@@ -76,6 +76,21 @@ body {
   font-size: 35px;
 }
 
+.card-label.infinity,
+.card-label.coffee {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+.card-label.infinity {
+  background-image: url(/images/infinity.svg);
+}
+
+.card-label.coffee {
+  background-image: url(/images/coffee_cup.svg);
+}
+
 @media (max-width: 310px) {
   .card-label {
     font-size: 20px;
