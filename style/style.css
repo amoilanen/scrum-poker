@@ -78,7 +78,6 @@ body {
 .card-label.coffee {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 70%;
 }
 
 .card-label.infinity {
@@ -96,11 +95,13 @@ body {
 .card-label {
   font-size: 17.5vw;
   line-height: 17.5vw;
+  background-size: 17.5vw;
 }
 
 .card.selected .card-label {
   font-size: 70vw;
   line-height: 70vw;
+  background-size: 70vw;
 }
 
 .card-label.medium-label {
@@ -124,11 +125,13 @@ body {
   .card-label {
     font-size: 17.5vh;
     line-height: 17.5vh;
+    background-size: 17.5vh;
   }
 
   .card.selected .card-label {
     font-size: 70vh;
     line-height: 70vh;
+    background-size: 70vh;
   }
 
   .card-label.medium-label {
