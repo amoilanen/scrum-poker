@@ -26,19 +26,20 @@ body {
 .card-cell {
   display: table-cell;
   width: 25%;
-  padding: 4px;
+  padding: 3px;
   text-align: center;
 }
 
 .card {
+  color: #ffffff;
   display: table;
   box-sizing: border-box;
-  border: 1px solid #061e23;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   height: 100%;
   width: 100%;
   box-shadow: 3px 3px 5px 0 #061e23;
-  background-image: linear-gradient(to bottom right, #FFFFFF 0%, #789A9F 100%);
+  background-color: #0088cf;
   max-width: 200px;
   max-height: 400px;
   min-height: 25px;
@@ -60,9 +61,7 @@ body {
 }
 
 .card:active {
-  background-image: linear-gradient(to bottom right, #FFFFFF 0%, #789A9F 100%);
-  box-shadow: 1px 1px 5px 0 #061e23;
-  transform: translate(2px, 2px);
+  background-color: #0075b3;
 }
 
 .card img {
@@ -76,16 +75,17 @@ body {
 
 .card-label.infinity,
 .card-label.coffee {
+  filter: grayscale(1);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .card-label.infinity {
-  background-image: url(/images/infinity.svg);
+  background-image: url(/images/infinity_white.svg);
 }
 
 .card-label.coffee {
-  background-image: url(/images/coffee_cup.svg);
+  background-image: url(/images/coffee_cup_white.svg);
 }
 
 

@@ -5,12 +5,12 @@
 - Deploy to the phone - DONE
 - On slide left navigation to the previous card - DONE
 - On slide right navigation to the next card - DONE
-
 - Visual adjustments
-  -- Use some custom visually appealing font
-  -- Labels should be larger on cards?
-  -- Horizontal/vertical alignment issues
-  -- Show small numbers at the top left/bottom right corners
+  -- Use some custom visually appealing font - DONE
+  -- Labels should be larger on cards? - DONE
+  -- Horizontal/vertical alignment issues - DONE
+  -- Show small numbers at the top left/bottom right corners - not needed, 'flat' minimalistic design instead
+- Provide a proper icon - DONE
 
 - Animations (if needed)
   -- Selecting a card
@@ -21,4 +21,3 @@
 - Allow to customize the background and appearance of the cards: few predefined themes?
 - Tests and some build infrastructure for the app?
 - Publish to the store
-  -- Provide a proper icon
