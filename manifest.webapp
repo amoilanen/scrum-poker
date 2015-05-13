@@ -1,10 +1,8 @@
 {
-  "name": "Agile Poker",
+  "name": "Scrum Poker",
   "description": "Provides a set of cards to use for planning poker in Scrum",
   "launch_path": "/index.html",
   "icons": {
-    "16": "/images/poker16.png",
-    "32": "/images/poker32.png",
     "64": "/images/poker64.png",
     "128": "/images/poker128.png"
   },

@@ -2,645 +2,275 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="128"
+   height="128"
+   viewBox="0 0 128 128"
+   id="svg4460"
    version="1.1"
-   width="60"
-   height="60"
-   id="svg2"
    inkscape:version="0.91 r13725"
    sodipodi:docname="poker.svg"
-   inkscape:export-filename="E:\Src\scrum-poker\images\poker128.png"
-   inkscape:export-xdpi="166.88309"
-   inkscape:export-ydpi="166.88309">
+   inkscape:export-filename="E:\Src\scrum-poker\images\poker64.png"
+   inkscape:export-xdpi="45.144661"
+   inkscape:export-ydpi="45.144661">
+  <defs
+     id="defs4462" />
   <sodipodi:namedview
+     id="base"
      pagecolor="#ffffff"
      bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="83.130877"
+     inkscape:cy="35.275862"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     id="namedview52"
-     showgrid="false"
-     inkscape:zoom="9.4719394"
-     inkscape:cx="23.937148"
-     inkscape:cy="27.040374"
      inkscape:window-x="1358"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
-     inkscape:snap-nodes="true" />
-  <defs
-     id="defs4">
-    <linearGradient
-       id="linearGradient5685"
-       osb:paint="solid">
-      <stop
-         style="stop-color:#f0f0f0;stop-opacity:1;"
-         offset="0"
-         id="stop5687" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient5654"
-       osb:paint="solid">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop5656" />
-    </linearGradient>
-    <filter
-       id="filter3896"
-       style="color-interpolation-filters:sRGB">
-      <feGaussianBlur
-         id="feGaussianBlur3898"
-         stdDeviation="0.042241016" />
-    </filter>
-    <filter
-       id="filter4828"
-       style="color-interpolation-filters:sRGB">
-      <feGaussianBlur
-         stdDeviation="1"
-         in="SourceGraphic"
-         result="result0"
-         id="feGaussianBlur4830" />
-      <feTurbulence
-         result="result1"
-         numOctaves="4"
-         seed="4"
-         baseFrequency="0.057"
-         type="turbulence"
-         id="feTurbulence4832" />
-      <feDisplacementMap
-         in2="result1"
-         scale="0"
-         xChannelSelector="R"
-         yChannelSelector="A"
-         result="result91"
-         id="feDisplacementMap4834" />
-      <feComposite
-         in2="result91"
-         operator="out"
-         in="result0"
-         result="result2"
-         id="feComposite4836" />
-      <feComposite
-         in2="result2"
-         operator="arithmetic"
-         k1="0.1"
-         k2="0"
-         k3="1.2"
-         k4="0"
-         in="SourceAlpha"
-         result="result5"
-         id="feComposite4838" />
-      <feBlend
-         in2="result5"
-         mode="multiply"
-         result="fbSourceGraphic"
-         id="feBlend4840" />
-      <feGaussianBlur
-         result="result0"
-         in="fbSourceGraphic"
-         stdDeviation="3"
-         id="feGaussianBlur4842" />
-      <feSpecularLighting
-         specularExponent="15"
-         specularConstant="0.40000001"
-         surfaceScale="3"
-         lighting-color="#fee65d"
-         result="result1"
-         in="result0"
-         id="feSpecularLighting4844">
-        <fePointLight
-           z="20000"
-           y="-10000"
-           x="-5000"
-           id="fePointLight4846" />
-      </feSpecularLighting>
-      <feComposite
-         in2="fbSourceGraphic"
-         operator="in"
-         in="result1"
-         result="result2"
-         id="feComposite4848" />
-      <feComposite
-         in2="result2"
-         operator="arithmetic"
-         k1="-1"
-         k2="2.5"
-         k3="3.5"
-         k4="0"
-         in="fbSourceGraphic"
-         result="result4"
-         id="feComposite4850" />
-      <feBlend
-         in2="result4"
-         mode="multiply"
-         id="feBlend4852" />
-    </filter>
-    <filter
-       id="filter4854"
-       style="color-interpolation-filters:sRGB">
-      <feGaussianBlur
-         stdDeviation="1"
-         in="SourceGraphic"
-         result="result0"
-         id="feGaussianBlur4856" />
-      <feTurbulence
-         result="result1"
-         numOctaves="4"
-         seed="4"
-         baseFrequency="0.057"
-         type="turbulence"
-         id="feTurbulence4858" />
-      <feDisplacementMap
-         in2="result1"
-         scale="0"
-         xChannelSelector="R"
-         yChannelSelector="A"
-         result="result91"
-         id="feDisplacementMap4860" />
-      <feComposite
-         in2="result91"
-         operator="out"
-         in="result0"
-         result="result2"
-         id="feComposite4862" />
-      <feComposite
-         in2="result2"
-         operator="arithmetic"
-         k1="0.1"
-         k2="0"
-         k3="1.2"
-         k4="0"
-         in="SourceAlpha"
-         result="result5"
-         id="feComposite4864" />
-      <feBlend
-         in2="result5"
-         mode="multiply"
-         result="fbSourceGraphic"
-         id="feBlend4866" />
-      <feGaussianBlur
-         result="result0"
-         in="fbSourceGraphic"
-         stdDeviation="3"
-         id="feGaussianBlur4868" />
-      <feSpecularLighting
-         specularExponent="15"
-         specularConstant="0.40000001"
-         surfaceScale="3"
-         lighting-color="#fee65d"
-         result="result1"
-         in="result0"
-         id="feSpecularLighting4870">
-        <fePointLight
-           z="20000"
-           y="-10000"
-           x="-5000"
-           id="fePointLight4872" />
-      </feSpecularLighting>
-      <feComposite
-         in2="fbSourceGraphic"
-         operator="in"
-         in="result1"
-         result="result2"
-         id="feComposite4874" />
-      <feComposite
-         in2="result2"
-         operator="arithmetic"
-         k1="-1"
-         k2="2.5"
-         k3="3.5"
-         k4="0"
-         in="fbSourceGraphic"
-         result="result4"
-         id="feComposite4876" />
-      <feBlend
-         in2="result4"
-         mode="multiply"
-         id="feBlend4878" />
-    </filter>
-    <filter
-       id="filter4880"
-       style="color-interpolation-filters:sRGB">
-      <feGaussianBlur
-         stdDeviation="1"
-         in="SourceGraphic"
-         result="result0"
-         id="feGaussianBlur4882" />
-      <feTurbulence
-         result="result1"
-         numOctaves="4"
-         seed="4"
-         baseFrequency="0.057"
-         type="turbulence"
-         id="feTurbulence4884" />
-      <feDisplacementMap
-         in2="result1"
-         scale="0"
-         xChannelSelector="R"
-         yChannelSelector="A"
-         result="result91"
-         id="feDisplacementMap4886" />
-      <feComposite
-         in2="result91"
-         operator="out"
-         in="result0"
-         result="result2"
-         id="feComposite4888" />
-      <feComposite
-         in2="result2"
-         operator="arithmetic"
-         k1="0.1"
-         k2="0"
-         k3="1.2"
-         k4="0"
-         in="SourceAlpha"
-         result="result5"
-         id="feComposite4890" />
-      <feBlend
-         in2="result5"
-         mode="multiply"
-         result="fbSourceGraphic"
-         id="feBlend4892" />
-      <feGaussianBlur
-         result="result0"
-         in="fbSourceGraphic"
-         stdDeviation="3"
-         id="feGaussianBlur4894" />
-      <feSpecularLighting
-         specularExponent="15"
-         specularConstant="0.40000001"
-         surfaceScale="3"
-         lighting-color="#fee65d"
-         result="result1"
-         in="result0"
-         id="feSpecularLighting4896">
-        <fePointLight
-           z="20000"
-           y="-10000"
-           x="-5000"
-           id="fePointLight4898" />
-      </feSpecularLighting>
-      <feComposite
-         in2="fbSourceGraphic"
-         operator="in"
-         in="result1"
-         result="result2"
-         id="feComposite4900" />
-      <feComposite
-         in2="result2"
-         operator="arithmetic"
-         k1="-1"
-         k2="2.5"
-         k3="3.5"
-         k4="0"
-         in="fbSourceGraphic"
-         result="result4"
-         id="feComposite4902" />
-      <feBlend
-         in2="result4"
-         mode="multiply"
-         id="feBlend4904" />
-    </filter>
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5662-7"
-       id="radialGradient5670-7"
-       cx="17.220339"
-       cy="1036.6334"
-       fx="17.220339"
-       fy="1036.6334"
-       r="8.7711868"
-       gradientTransform="matrix(1,0,0,1.479227,0,-496.78266)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient5662-7">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop5664-8" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0;"
-         offset="1"
-         id="stop5666-4" />
-    </linearGradient>
-    <radialGradient
-       r="8.7711868"
-       fy="1036.6334"
-       fx="17.220339"
-       cy="1036.6334"
-       cx="17.220339"
-       gradientTransform="matrix(1,0,0,1.479227,-8.449152,-1520.4415)"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient5726"
-       xlink:href="#linearGradient5662-7"
-       inkscape:collect="always" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5662-8"
-       id="radialGradient5670-3"
-       cx="17.220339"
-       cy="1036.6334"
-       fx="17.220339"
-       fy="1036.6334"
-       r="8.7711868"
-       gradientTransform="matrix(1,0,0,1.479227,0,-496.78266)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient5662-8">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop5664-2" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0;"
-         offset="1"
-         id="stop5666-2" />
-    </linearGradient>
-    <filter
-       inkscape:collect="always"
-       id="filter4338-4"
-       style="color-interpolation-filters:sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.10372881"
-         id="feGaussianBlur4340-2" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter4338-4-6"
-       style="color-interpolation-filters:sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.10372881"
-         id="feGaussianBlur4340-2-1" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter4338-4-4"
-       style="color-interpolation-filters:sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.10372881"
-         id="feGaussianBlur4340-2-5" />
-    </filter>
-  </defs>
+     inkscape:window-maximized="1" />
   <metadata
-     id="metadata7">
+     id="metadata4465">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-992.3622)"
-     id="layer1">
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-924.36216)">
     <rect
-       style="opacity:1;fill:#89cff0;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.02, 0.02000000000000000;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4338-4)"
-       id="rect4003-4-1"
-       width="16.542374"
-       height="24.949152"
-       x="8.0051565"
-       y="1023.2813"
-       transform="matrix(1.7571071,-0.65266762,0.6323326,1.8392839,-660.55662,-872.51609)" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.72688293px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="-324.62259"
-       y="958.26349"
-       id="text4007-5-2"
-       sodipodi:linespacing="125%"
-       transform="matrix(0.92040279,-0.34187848,0.33122668,0.96344854,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan4009-0-2"
-         x="-324.62259"
-         y="958.26349">1</tspan><tspan
-         sodipodi:role="line"
-         x="-324.62259"
-         y="991.44128"
-         id="tspan4513" /></text>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.40965414px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="-335.31537"
-       y="942.38397"
-       id="text4007-5-9-7-9"
-       sodipodi:linespacing="125%"
-       transform="matrix(0.8958509,-0.33275882,0.34030435,0.98985302,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan4009-0-4-8-2"
-         x="-335.31537"
-         y="942.38397">1</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.90013146px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="-357.5972"
-       y="878.02576"
-       id="text4007-5-9-7-2-3"
-       sodipodi:linespacing="125%"
-       transform="matrix(0.83443267,-0.30994538,0.36535231,1.062711,0,0)"><tspan
-         sodipodi:role="line"
-         x="-357.5972"
-         y="878.02576"
-         id="tspan3932-6">Scrum Poker</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.90013146px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="-356.96558"
-       y="843.21381"
-       id="text4007-5-9-7-2-8-3"
-       sodipodi:linespacing="125%"
-       transform="matrix(0.83443267,-0.30994538,0.36535231,1.062711,0,0)"><tspan
-         sodipodi:role="line"
-         x="-356.96558"
-         y="843.21381"
-         id="tspan3932-9-5">Scrum Poker</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.40965414px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="-338.92026"
-       y="905.86798"
-       id="text4007-5-9-7-9-2"
-       sodipodi:linespacing="125%"
-       transform="matrix(0.8958509,-0.33275882,0.34030435,0.98985302,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan4009-0-4-8-2-8"
-         x="-338.92026"
-         y="905.86798">1</tspan></text>
-    <rect
-       style="opacity:1;fill:#89cff0;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.02, 0.02000000000000000;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4338-4-6)"
+       style="opacity:1;fill:#0088cf;fill-opacity:0.90196078;stroke:#ffffff;stroke-width:0.75409746;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.07540975, 0.07540975;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4003-4-1-1"
-       width="16.542374"
-       height="24.949152"
-       x="8.0051565"
-       y="1023.2813"
-       transform="matrix(1.8659286,0,0,1.9531948,0.38338402,-1000.4732)" />
+       width="56.784286"
+       height="103.25676"
+       x="-338.43286"
+       y="837.45953"
+       transform="matrix(0.86655034,-0.49908968,0.35057035,0.9365364,0,0)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.72688293px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="23.181414"
-       y="1009.2919"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:52.50910187px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="-355.37473"
+       y="824.91449"
        id="text4007-5-2-8"
        sodipodi:linespacing="125%"
-       transform="scale(0.97740534,1.023117)"><tspan
+       transform="matrix(0.79604098,-0.45676721,0.38828687,1.0334183,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4009-0-2-2"
-         x="23.181414"
-         y="1009.2919">3</tspan><tspan
+         x="-355.37473"
+         y="824.91449">1</tspan><tspan
          sodipodi:role="line"
-         x="23.181414"
-         y="1042.4696"
+         x="-355.37473"
+         y="890.27631"
          id="tspan4513-2" /></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.40965414px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="42.732075"
-       y="993.31427"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.62810516px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="-327.95206"
+       y="824.41406"
        id="text4007-5-9-7-9-27"
        sodipodi:linespacing="125%"
-       transform="scale(0.9513329,1.0511568)"><tspan
+       transform="matrix(0.77480642,-0.44458283,0.39892831,1.0617405,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4009-0-4-8-2-83"
-         x="42.732075"
-         y="993.31427">3</tspan></text>
+         x="-327.95206"
+         y="824.41406">1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.90013099px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="26.040462"
-       y="924.2879"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.69775629px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="-391.06354"
+       y="766.07355"
        id="text4007-5-9-7-2-3-5"
        sodipodi:linespacing="125%"
-       transform="scale(0.88611095,1.1285269)"><tspan
+       transform="matrix(0.72168695,-0.41410297,0.42829135,1.1398894,0,0)"><tspan
          sodipodi:role="line"
-         x="26.040462"
-         y="924.2879"
+         x="-391.06354"
+         y="766.07355"
          id="tspan3932-6-3">Scrum Poker</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.90013099px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="26.672064"
-       y="889.47595"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.69775629px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="-389.82263"
+       y="697.67999"
        id="text4007-5-9-7-2-8-3-0"
        sodipodi:linespacing="125%"
-       transform="scale(0.88611095,1.1285269)"><tspan
+       transform="matrix(0.72168695,-0.41410297,0.42829135,1.1398894,0,0)"><tspan
          sodipodi:role="line"
-         x="26.672064"
-         y="889.47595"
+         x="-389.82263"
+         y="697.67999"
          id="tspan3932-9-5-2">Scrum Poker</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.40965414px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="18.415892"
-       y="955.53571"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.62810516px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="-375.72498"
+       y="750.1922"
        id="text4007-5-9-7-9-2-9"
        sodipodi:linespacing="125%"
-       transform="scale(0.9513329,1.0511568)"><tspan
+       transform="matrix(0.77480642,-0.44458283,0.39892831,1.0617405,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4009-0-4-8-2-8-0"
-         x="18.415892"
-         y="955.53571">3</tspan></text>
+         x="-375.72498"
+         y="750.1922">1</tspan></text>
     <rect
-       style="opacity:1;fill:#89cff0;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.02, 0.02000000000000000;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4338-4-4)"
-       id="rect4003-4-1-2"
-       width="16.542374"
-       height="24.949152"
-       x="8.0051565"
-       y="1023.2813"
-       transform="matrix(1.7752674,0.5972153,-0.57860797,1.8582935,608.01931,-911.27503)" />
+       style="opacity:1;fill:#0088cf;fill-opacity:0.90196078;stroke:#ffffff;stroke-width:0.77616036;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.07761603, 0.07761603;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4003-4-1-1-4"
+       width="58.271267"
+       height="106.59579"
+       x="34.773914"
+       y="936.2204" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.72688293px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="338.44534"
-       y="949.5437"
-       id="text4007-5-2-4"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:54.31233597px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="53.552032"
+       y="918.47186"
+       id="text4007-5-2-8-5"
        sodipodi:linespacing="125%"
-       transform="matrix(0.92991553,0.3128316,-0.30308482,0.97340615,0,0)"><tspan
+       transform="scale(0.90800058,1.1013209)"><tspan
          sodipodi:role="line"
-         id="tspan4009-0-2-6"
-         x="338.44534"
-         y="949.5437">5</tspan><tspan
+         id="tspan4009-0-2-2-6"
+         x="53.552032"
+         y="918.47186">3</tspan><tspan
          sodipodi:role="line"
-         x="338.44534"
-         y="982.7215"
-         id="tspan4513-1" /></text>
+         x="53.552032"
+         y="986.07831"
+         id="tspan4513-2-9" /></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.40965414px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="366.63617"
-       y="935.15936"
-       id="text4007-5-9-7-9-3"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.99308968px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="93.458023"
+       y="916.21368"
+       id="text4007-5-9-7-9-27-8"
        sodipodi:linespacing="125%"
-       transform="matrix(0.90510987,0.30448678,-0.31139123,1.0000835,0,0)"><tspan
+       transform="scale(0.88377955,1.1315039)"><tspan
          sodipodi:role="line"
-         id="tspan4009-0-4-8-2-4"
-         x="366.63617"
-         y="935.15936">5</tspan></text>
+         id="tspan4009-0-4-8-2-83-5"
+         x="93.458023"
+         y="916.21368">3</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.90013146px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="373.78531"
-       y="870.12012"
-       id="text4007-5-9-7-2-3-59"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.89342499px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="60.025913"
+       y="851.51727"
+       id="text4007-5-9-7-2-3-5-1"
        sodipodi:linespacing="125%"
-       transform="matrix(0.84305694,0.28361163,-0.3343111,1.0736944,0,0)"><tspan
+       transform="scale(0.82318908,1.2147877)"><tspan
          sodipodi:role="line"
-         x="373.78531"
-         y="870.12012"
-         id="tspan3932-6-0">Scrum Poker</tspan></text>
+         x="60.025913"
+         y="851.51727"
+         id="tspan3932-6-3-8">Scrum Poker</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.90013146px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="374.41696"
-       y="835.30823"
-       id="text4007-5-9-7-2-8-3-04"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.89342499px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="61.30941"
+       y="780.77521"
+       id="text4007-5-9-7-2-8-3-0-0"
        sodipodi:linespacing="125%"
-       transform="matrix(0.84305694,0.28361163,-0.3343111,1.0736944,0,0)"><tspan
+       transform="scale(0.82318908,1.2147877)"><tspan
          sodipodi:role="line"
-         x="374.41696"
-         y="835.30823"
-         id="tspan3932-9-5-20">Scrum Poker</tspan></text>
+         x="61.30941"
+         y="780.77521"
+         id="tspan3932-9-5-2-3">Scrum Poker</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.40965414px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none"
-       x="342.32004"
-       y="897.38055"
-       id="text4007-5-9-7-9-2-3"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.99308968px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="44.044529"
+       y="839.44305"
+       id="text4007-5-9-7-9-2-9-5"
        sodipodi:linespacing="125%"
-       transform="matrix(0.90510987,0.30448678,-0.31139123,1.0000835,0,0)"><tspan
+       transform="scale(0.88377955,1.1315039)"><tspan
          sodipodi:role="line"
-         id="tspan4009-0-4-8-2-8-8"
-         x="342.32004"
-         y="897.38055">5</tspan></text>
+         id="tspan4009-0-4-8-2-8-0-8"
+         x="44.044529"
+         y="839.44305">3</tspan></text>
+    <rect
+       style="opacity:1;fill:#0088cf;fill-opacity:0.90196078;stroke:#ffffff;stroke-width:0.79465032;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.07946503, 0.07946503;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4003-4-1-1-0"
+       width="61.618931"
+       height="105.59065"
+       x="344.56326"
+       y="845.59857"
+       transform="matrix(0.93497569,0.35471179,-0.29785165,0.95461217,0,0)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-25.443575"
-       y="1032.6196"
-       id="text6093"
-       sodipodi:linespacing="125%"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55.53640747px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="382.54471"
+       y="862.50647"
+       id="text4007-5-2-8-1"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.87794423,0.33307516,-0.31777513,1.0184667,0,0)"><tspan
          sodipodi:role="line"
-         id="tspan6095"
-         x="-25.443575"
-         y="1032.6196" /></text>
+         id="tspan4009-0-2-2-3"
+         x="382.54471"
+         y="862.50647">5</tspan><tspan
+         sodipodi:role="line"
+         x="382.54471"
+         y="931.6366"
+         id="tspan4513-2-5" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.24084759px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="432.3335"
+       y="862.24292"
+       id="text4007-5-9-7-9-27-0"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.85452484,0.32419031,-0.32648415,1.0463792,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4009-0-4-8-2-83-3"
+         x="432.3335"
+         y="862.24292">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.02624941px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="422.93567"
+       y="801.20416"
+       id="text4007-5-9-7-2-3-5-5"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.79593995,0.30196435,-0.3505149,1.1233976,0,0)"><tspan
+         sodipodi:role="line"
+         x="422.93567"
+         y="801.20416"
+         id="tspan3932-6-3-5">Scrum Poker</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.02624941px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="424.24811"
+       y="728.86755"
+       id="text4007-5-9-7-2-8-3-0-6"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.79593995,0.30196435,-0.3505149,1.1233976,0,0)"><tspan
+         sodipodi:role="line"
+         x="424.24811"
+         y="728.86755"
+         id="tspan3932-9-5-2-6">Scrum Poker</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.24084759px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:'Cantarell Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="381.80643"
+       y="783.742"
+       id="text4007-5-9-7-9-2-9-0"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.85452484,0.32419031,-0.32648415,1.0463792,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4009-0-4-8-2-8-0-82"
+         x="381.80643"
+         y="783.742">5</tspan></text>
   </g>
 </svg>
