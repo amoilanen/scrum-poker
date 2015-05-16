@@ -1,4 +1,7 @@
+'use strict';
 (function(host) {
+
+  var MAX_SWIPE_DELTA_PX = 50;
 
   function Card(deck, cardElement) {
     this.deck = deck;
@@ -15,15 +18,28 @@
 
   Card.prototype.toggle = function() {
     this.cardElement.classList.toggle('selected');
-    if (this.cardElement.classList.contains('selected')) {
-      this.deck.activeCard = this;
+    this.deck.activeCard = (this.cardElement.classList.contains('selected') ? this : null);
+  };
+
+  Card.prototype.moveHorizontally = function(deltaX) {
+    if (deltaX > 0) {
+      this.cardElement.style.paddingLeft = Math.min(deltaX, MAX_SWIPE_DELTA_PX) + 'px';
+    } else {
+      this.cardElement.style.paddingRight = Math.min(-deltaX, MAX_SWIPE_DELTA_PX) + 'px';
     }
+  };
+
+  Card.prototype.moveToDefaultPosition = function() {
+    this.cardElement.style.paddingRight = null;
+    this.cardElement.style.paddingLeft = null;
   };
 
   host.Card = Card;
 })(this);
 
 (function(host) {
+
+  var MIN_SWIPE_DELTA_PX = 15;
 
   function Deck(cards) {
     var self = this;
@@ -37,43 +53,63 @@
     var touchStart;
 
     document.addEventListener('touchstart', function(event) {
-      //console.log('touch start', event.touches[0]);
+      if (!self.activeCard) {
+        return;
+      }
       touchStart = event.targetTouches[0];
     });
     document.addEventListener('touchmove', function(event) {
-      //console.log('touch move', event.touches[0]);
+      if (!self.activeCard) {
+        return;
+      }
       var touchCurrent = event.touches[0];
-      //var shiftX = Math.min(touchCurrent.clientX - touchStart.clientX, 5);
-
-      //self.activeCard.cardElement.style.left = shiftX + 'px';
+      self.activeCard.moveHorizontally(touchCurrent.clientX - touchStart.clientX);
     });
     document.addEventListener('touchend', function(event) {
-      var currentCardIndex = self.cards.indexOf(self.activeCard);
-      var nextCardIndex;
-      //console.log('touch end', event.touches[0]);
+      if (!self.activeCard) {
+        return;
+      }
       var touchEnd = event.changedTouches[0];
 
-      var swipeDeltaX = touchEnd.clientX - touchStart.clientX;
-
-      if (swipeDeltaX > 15) {
-        console.log('left');
-        nextCardIndex = currentCardIndex - 1;
-        if (nextCardIndex < 0) {
-          nextCardIndex = self.cards.length - 1;
-        }
-        self.activeCard.toggle();
-        self.cards[nextCardIndex].toggle();
-      } else if (swipeDeltaX < -15) {
-        console.log('right');
-        nextCardIndex = currentCardIndex + 1;
-        if (nextCardIndex >= self.cards.length) {
-          nextCardIndex = 0;
-        }
-        self.activeCard.toggle();
-        self.cards[nextCardIndex].toggle();
-      }
+      self._handleSwipe(touchEnd.clientX - touchStart.clientX);
     });
     this._readCards();
+  };
+
+  Deck.prototype._handleSwipe = function(swipeDeltaX) {
+    var nextCard;
+
+    if (Math.abs(swipeDeltaX) < MIN_SWIPE_DELTA_PX) {
+      return;
+    }
+    if (swipeDeltaX > 0) {
+      nextCard = this._getLeftNeighborCard(this.activeCard);
+    } else {
+      nextCard = this._getRightNeighborCard(this.activeCard);
+    }
+    this.activeCard.moveToDefaultPosition();
+    this.activeCard.toggle();
+    nextCard.toggle();
+  };
+
+  Deck.prototype._getLeftNeighborCard = function(card) {
+    var currentIndex = this.cards.indexOf(card);
+    var neighborIndex = currentIndex - 1;
+
+    if (neighborIndex < 0) {
+      neighborIndex = this.cards.length - 1;
+    }
+    return this.cards[neighborIndex];
+  };
+
+  Deck.prototype._getRightNeighborCard = function(card) {
+    var currentIndex = this.cards.indexOf(card);
+    var neighborIndex = currentIndex + 1;
+
+    if (neighborIndex >= this.cards.length) {
+      neighborIndex = 0;
+    }
+    return this.cards[neighborIndex];
   };
 
   Deck.prototype._readCards = function() {
