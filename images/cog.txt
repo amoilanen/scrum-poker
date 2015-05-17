@@ -1,0 +1,6 @@
+Cog icon
+
+from http://commons.wikimedia.org/wiki/File:Cog,_Web_Fundamentals.svg
+Google Web Fundamentals icons, released under Apache 2.0
+
+Based on Google Web Fundamentals https://developers.google.com/web/fundamentals/

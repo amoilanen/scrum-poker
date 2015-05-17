@@ -80,7 +80,6 @@ body {
 
 .card-label.infinity,
 .card-label.coffee {
-  filter: grayscale(1);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -123,6 +122,50 @@ body {
 
 .card.selected .card-label.large-label {
   font-size: 50vw;
+}
+
+#settingsBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 8vh;
+  min-height: 8vw;
+  width: 100%;
+}
+
+#settingsBar ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#settingsBar ul li {
+  display: inline-block;
+  height: 8vh;
+  min-height: 8vw;
+  width: 8vh;
+  min-width: 8vw;
+  box-sizing: border-box;
+  float: right;
+}
+
+.menu-button {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-size: 70%;
+}
+
+#themesMenuItem .menu-button {
+  background-image: url(/images/cog.svg);
+}
+
+#aboutMenuItem .menu-button {
+  background-image: url(/images/info.svg);
 }
 
 @media all and (orientation: landscape) {

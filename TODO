@@ -16,6 +16,7 @@
   -- Swipe - DONE
 
 - Show attribution information, version, some brief info (About menu)
+- Re-factoring: use separate CSS files and import them
 - Make sure that the app works in Chrome as well, desktop Firefox
 - Allow to customize the background and appearance of the cards: few predefined themes?
 - Tests and some build infrastructure for the app?
