@@ -127,22 +127,52 @@
   host.Deck = Deck;
 })(this);
 
+(function(host) {
+
+  function SettingsBar() {
+    this.minimizedSettingsBar = null;
+    this.settingsBar = null;
+    this.maximizeMenuButton = null;
+  }
+
+  SettingsBar.prototype.init = function() {
+    var self = this;
+    this.minimizedSettingsBar = document.querySelector('#minimizedSettingsBar');
+    this.settingsBar = document.querySelector('#settingsBar');
+    this.maximizeMenuButton = document.querySelector('#maximizeMenuButton');
+
+    this.maximizeMenuButton.addEventListener('click', function(event) {
+      self.maximize();
+      setTimeout(function() {
+        self.minimize();
+      }, 2000);
+    }, false);
+  };
+
+  SettingsBar.prototype.maximize = function() {
+    this.minimizedSettingsBar.classList.remove('shown');
+    this.settingsBar.classList.add('shown');
+  };
+
+  SettingsBar.prototype.minimize = function() {
+    this.minimizedSettingsBar.classList.add('shown');
+    this.settingsBar.classList.remove('shown');
+  };
+
+  host.SettingsBar = SettingsBar;
+})(this);
+
 var deck = new Deck();
+var settingsBar = new SettingsBar();
 
 document.addEventListener('DOMContentLoaded', function(event) {
   deck.init();
+  settingsBar.init();
 }, false);
 
 //TODO: Show active menu items styling according to the guidelines
 //TODO: If inactive the maximized menu is again minimized after some timeout
-//TODO: On pressing 'maximize' menu is maximized
-//TODO: Implement 'About'
-//TODO: Implement theme selection
+//TODO: Implement 'About', menu is not minimized in the background
+//TODO: Implement theme selection, menu is not minimized in the background
 
-/*
-var minimizedSettingsBar = document.querySelector('#minimizedSettingsBar');
-var settingsBar = document.querySelector('#settingsBar');
-
-minimizedSettingsBar.classList.toggle('shown');
-settingsBar.classList.toggle('shown');
-*/
+//TODO: Bug. Landscape orientation, maximizing/minimizing menu, the maximize button is briefly shown at the left corner
