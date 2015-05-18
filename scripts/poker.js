@@ -132,3 +132,17 @@ var deck = new Deck();
 document.addEventListener('DOMContentLoaded', function(event) {
   deck.init();
 }, false);
+
+//TODO: Show active menu items styling according to the guidelines
+//TODO: If inactive the maximized menu is again minimized after some timeout
+//TODO: On pressing 'maximize' menu is maximized
+//TODO: Implement 'About'
+//TODO: Implement theme selection
+
+/*
+var minimizedSettingsBar = document.querySelector('#minimizedSettingsBar');
+var settingsBar = document.querySelector('#settingsBar');
+
+minimizedSettingsBar.classList.toggle('shown');
+settingsBar.classList.toggle('shown');
+*/
