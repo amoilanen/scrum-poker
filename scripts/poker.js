@@ -129,10 +129,12 @@
 
 (function(host) {
 
-  function SettingsBar() {
+  function SettingsBar(aboutDialog) {
+    this.aboutDialog = aboutDialog;
     this.minimizedSettingsBar = null;
     this.settingsBar = null;
     this.maximizeMenuButton = null;
+    this.aboutMenuButton = null;
   }
 
   SettingsBar.prototype.init = function() {
@@ -140,7 +142,11 @@
     this.minimizedSettingsBar = document.querySelector('#minimizedSettingsBar');
     this.settingsBar = document.querySelector('#settingsBar');
     this.maximizeMenuButton = document.querySelector('#maximizeMenuButton');
+    this.aboutMenuButton = document.querySelector('#aboutMenuItem');
 
+    this.aboutMenuButton.addEventListener('click', function(event) {
+      self.aboutDialog.show();
+    }, false);
     this.maximizeMenuButton.addEventListener('click', function(event) {
       self.maximize();
       setTimeout(function() {
@@ -162,15 +168,44 @@
   host.SettingsBar = SettingsBar;
 })(this);
 
+(function(host) {
+
+  function AboutDialog() {
+    this.dialog = null;
+    this.acceptButton = null;
+  }
+
+  AboutDialog.prototype.init = function() {
+    var self = this;
+    this.dialog = document.querySelector('#aboutDialog');
+    this.acceptButton = this.dialog.querySelector('button');
+
+    this.acceptButton.addEventListener('click', function() {
+      self.hide();
+    });
+  };
+
+  AboutDialog.prototype.show = function() {
+    this.dialog.classList.add('shown');
+  };
+
+  AboutDialog.prototype.hide = function() {
+    this.dialog.classList.remove('shown');
+  };
+
+  host.AboutDialog = AboutDialog;
+})(this);
+
 var deck = new Deck();
-var settingsBar = new SettingsBar();
+var aboutDialog = new AboutDialog();
+var settingsBar = new SettingsBar(aboutDialog);
 
 document.addEventListener('DOMContentLoaded', function(event) {
   deck.init();
   settingsBar.init();
+  aboutDialog.init();
 }, false);
 
-//TODO: Show active menu items styling according to the guidelines
 //TODO: If inactive the maximized menu is again minimized after some timeout
 //TODO: Implement 'About', menu is not minimized in the background
 //TODO: Implement theme selection, menu is not minimized in the background

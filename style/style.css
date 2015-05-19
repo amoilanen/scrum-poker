@@ -170,16 +170,22 @@ body {
   min-height: 8vw;
   width: 8vh;
   min-width: 8vw;
+  margin-left: 3vw;
   box-sizing: border-box;
   float: right;
 }
 
 .menu-button {
+  cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 100%;
   background-size: 70%;
+}
+
+.menu-button:active {
+  background-color: #00AACC;
 }
 
 #themesMenuItem .menu-button {
@@ -210,6 +216,19 @@ body {
   border-left: 1vh solid transparent;
   border-right: 1vh solid transparent;
   border-bottom: 1vh solid #ffffff;
+}
+
+#aboutDialog {
+  display: none;
+}
+
+#aboutDialog.shown {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 @media all and (orientation: landscape) {
