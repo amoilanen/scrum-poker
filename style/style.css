@@ -39,7 +39,7 @@ body {
   height: 100%;
   width: 100%;
   box-shadow: 3px 3px 5px 0 #061e23;
-  background-color: #0088cf;
+  background-color: #0095DD;
   max-width: 200px;
   max-height: 400px;
   min-height: 25px;
@@ -62,11 +62,11 @@ body {
 }
 
 .card:active {
-  background-color: #0075b3;
+  background-color: #00539F;
 }
 
 .card.selected:active {
-  background-color: #0088cf;
+  background-color: #0095DD;
 }
 
 .card img {
@@ -198,11 +198,10 @@ body {
   width: 8vh;
   min-width: 8vw;
   height: 100%;
-  background-color: orange;
+  background-color: #E66000;
   color: #ffffff;
   font-weight: 800;
   float: right;
-  margin-right: 2%;
 }
 
 #maximizeMenuButton div {
