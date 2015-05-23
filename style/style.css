@@ -7,6 +7,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  font-family: "Fira Sans Regular";
 }
 
 #cardsContainer {
@@ -218,17 +219,53 @@ body {
   border-bottom: 1vh solid #ffffff;
 }
 
-#aboutDialog {
-  display: none;
+/*
+ * Buttons
+ */
+.button {
+  display: block;
+  height: 40px;
+  background-color: #00CAF2;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  font-style: italic;
 }
 
-#aboutDialog.shown {
+.button:active {
+  background-color: #00AACC;
+}
+
+/*
+ * Dialogs
+ */
+.dialog {
+  display: none;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.dialog.shown {
   display: block;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
+}
+
+.dialog .button {
+  width: 100%;
+}
+
+.dialog .footer {
+  padding: 4vw;
+  border-top: 1px solid rgba(166, 166, 166, 0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media all and (orientation: landscape) {

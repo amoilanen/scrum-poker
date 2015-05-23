@@ -178,7 +178,7 @@
   AboutDialog.prototype.init = function() {
     var self = this;
     this.dialog = document.querySelector('#aboutDialog');
-    this.acceptButton = this.dialog.querySelector('button');
+    this.acceptButton = this.dialog.querySelector('.button');
 
     this.acceptButton.addEventListener('click', function() {
       self.hide();
