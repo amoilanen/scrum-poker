@@ -219,6 +219,17 @@ body {
   border-bottom: 1vh solid #ffffff;
 }
 
+#aboutDialog .license {
+  font-size: 2vh;
+  max-height: 20vh;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+#aboutDialog {
+  text-align: center;
+}
+
 /*
  * Buttons
  */
@@ -243,7 +254,8 @@ body {
 .dialog {
   display: none;
   color: #ffffff;
-  background-color: #333333;
+  background-color: rgba(51, 51, 51, 0.99);
+  font-style: italic;
 }
 
 .dialog.shown {
@@ -255,17 +267,42 @@ body {
   bottom: 0;
 }
 
-.dialog .button {
-  width: 100%;
+.dialog h1,
+.dialog p {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.dialog a {
+  color: #ffffff;
+}
+
+.dialog .header {
+  padding: 1vh;
+  text-align: center;
+  border-bottom: 1px solid rgba(166, 166, 166, 0.2);
+}
+
+.dialog .header h1 {
+  font-size: 6vh;
+}
+
+.dialog .content {
+  font-size: 2.5vh;
+  padding: 2vh;
 }
 
 .dialog .footer {
-  padding: 4vw;
+  padding: 14.4px;
   border-top: 1px solid rgba(166, 166, 166, 0.2);
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.dialog.confirm .ok-button {
+  width: 100%;
 }
 
 @media all and (orientation: landscape) {
