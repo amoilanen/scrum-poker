@@ -129,12 +129,14 @@
 
 (function(host) {
 
-  function SettingsBar(aboutDialog) {
+  function SettingsBar(aboutDialog, settingsDialog) {
     this.aboutDialog = aboutDialog;
+    this.settingsDialog = settingsDialog;
     this.minimizedSettingsBar = null;
     this.settingsBar = null;
     this.maximizeMenuButton = null;
     this.aboutMenuButton = null;
+    this.settingsDialogButton = null;
   }
 
   SettingsBar.prototype.init = function() {
@@ -143,9 +145,13 @@
     this.settingsBar = document.querySelector('#settingsBar');
     this.maximizeMenuButton = document.querySelector('#maximizeMenuButton');
     this.aboutMenuButton = document.querySelector('#aboutMenuItem');
+    this.settingsDialogButton = document.querySelector('#settingsMenuItem');
 
     this.aboutMenuButton.addEventListener('click', function(event) {
       self.aboutDialog.show();
+    }, false);
+    this.settingsDialogButton.addEventListener('click', function(event) {
+      self.settingsDialog.show();
     }, false);
     this.maximizeMenuButton.addEventListener('click', function(event) {
       self.maximize();
@@ -196,14 +202,49 @@
   host.AboutDialog = AboutDialog;
 })(this);
 
+(function(host) {
+
+  function SettingsDialog() {
+    this.dialog = null;
+    this.acceptButton = null;
+    this.cancelButton = null;
+  }
+
+  SettingsDialog.prototype.init = function() {
+    var self = this;
+    this.dialog = document.querySelector('#settingsDialog');
+    this.acceptButton = this.dialog.querySelector('.ok-button');
+    this.cancelButton = this.dialog.querySelector('.cancel-button');
+
+    this.acceptButton.addEventListener('click', function() {
+      self.hide();
+    });
+    this.cancelButton.addEventListener('click', function() {
+      self.hide();
+    });
+  };
+
+  SettingsDialog.prototype.show = function() {
+    this.dialog.classList.add('shown');
+  };
+
+  SettingsDialog.prototype.hide = function() {
+    this.dialog.classList.remove('shown');
+  };
+
+  host.SettingsDialog = SettingsDialog;
+})(this);
+
 var deck = new Deck();
 var aboutDialog = new AboutDialog();
-var settingsBar = new SettingsBar(aboutDialog);
+var settingsDialog = new SettingsDialog();
+var settingsBar = new SettingsBar(aboutDialog, settingsDialog);
 
 document.addEventListener('DOMContentLoaded', function(event) {
   deck.init();
   settingsBar.init();
   aboutDialog.init();
+  settingsDialog.init();
 }, false);
 
 //TODO: If inactive the maximized menu is again minimized after some timeout

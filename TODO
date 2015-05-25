@@ -14,10 +14,10 @@
 - Animations (if needed)
   -- Selecting a card - DONE
   -- Swipe - DONE
+- Show attribution information, version, some brief info (About menu) - DONE
 
-- Show attribution information, version, some brief info (About menu)
+- Allow to customize the background and appearance of the cards: few predefined themes?
 - Re-factoring: use separate CSS files and import them
 - Make sure that the app works in Chrome as well, desktop Firefox
-- Allow to customize the background and appearance of the cards: few predefined themes?
 - Tests and some build infrastructure for the app?
 - Publish to the store

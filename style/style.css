@@ -189,7 +189,7 @@ body {
   background-color: #00AACC;
 }
 
-#themesMenuItem .menu-button {
+#settingsMenuItem .menu-button {
   background-image: url(/images/cog.svg);
 }
 
@@ -248,6 +248,15 @@ body {
   background-color: #00AACC;
 }
 
+.cancel-button {
+  color: #333333;
+  background-color: #E7E7E7;
+}
+
+.cancel-button:active {
+  background-color: #C7C7C7;
+}
+
 /*
  * Dialogs
  */
@@ -303,6 +312,22 @@ body {
 
 .dialog.confirm .ok-button {
   width: 100%;
+}
+
+/*
+ * Choice dialog
+ */
+.dialog.choice .button {
+  width: 48.5%;
+  display: inline-block;
+}
+
+.dialog.choice .cancel-button {
+  margin-right: 1.5%;
+}
+
+.dialog.choice .ok-button {
+  margin-left: 1.5%;
 }
 
 @media all and (orientation: landscape) {
