@@ -158,7 +158,7 @@
       setTimeout(function() {
         self.minimize();
       }, 2000);
-    }, false);
+    }, true);
   };
 
   SettingsBar.prototype.maximize = function() {
@@ -208,6 +208,7 @@
     this.dialog = null;
     this.acceptButton = null;
     this.cancelButton = null;
+    this.selectedTheme = 'lightBlue';
   }
 
   SettingsDialog.prototype.init = function() {
@@ -222,9 +223,40 @@
     this.cancelButton.addEventListener('click', function() {
       self.hide();
     });
+
+    this.dialog.querySelector('ul').addEventListener('click', function(event) {
+      var themeElement = self._findParentThemeElement(event.target);
+
+      if (themeElement) {
+        self.selectedTheme = themeElement.getAttribute('theme');
+        self._renderSelection();
+      }
+    });
+  };
+
+  SettingsDialog.prototype._findParentThemeElement = function(domElement) {
+    var current = domElement;
+
+    while (!current.getAttribute('theme') && current.parentNode) {
+      current = current.parentNode;
+    }
+    return current;
+  };
+
+  SettingsDialog.prototype._renderSelection = function() {
+    var oldSelectedThemes = this.dialog.querySelectorAll('li.selected');
+    var currentSelectedTheme = this.dialog.querySelector('li[theme=' + this.selectedTheme + ']');
+
+    [].slice.call(oldSelectedThemes).forEach(function(selectedTheme) {
+      selectedTheme.classList.remove('selected');
+    });
+    if (currentSelectedTheme) {
+      currentSelectedTheme.classList.add('selected');
+    }
   };
 
   SettingsDialog.prototype.show = function() {
+    this._renderSelection();
     this.dialog.classList.add('shown');
   };
 
@@ -250,5 +282,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
 //TODO: If inactive the maximized menu is again minimized after some timeout
 //TODO: Implement 'About', menu is not minimized in the background
 //TODO: Implement theme selection, menu is not minimized in the background
+//TODO: Theme is stored in the local storage so that even after app restart it stays unchanged
 
 //TODO: Bug. Landscape orientation, maximizing/minimizing menu, the maximize button is briefly shown at the left corner
+
+//TODO: Test plan
+ //- Navigatine left/right
+ //- Opening/closing cards by clicking on them
+ //- Menu bar should automatically hide if inactive
+ //- About menu
+ //- Settings menu
+ // -- Selecting a color, OK
+ // -- Selecting a color, Cancel
+ //- Landscape/portrait mode for the device
