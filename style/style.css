@@ -63,11 +63,11 @@ body {
 }
 
 .card:active {
-  background-color: #00539F;
+  opacity: 0.8;
 }
 
 .card.selected:active {
-  background-color: #0095DD;
+  opacity: 1;
 }
 
 .card img {
@@ -393,27 +393,33 @@ body {
   margin-right: 20px;
 }
 
-[theme=orange] .theme-sample {
+[theme=orange] .theme-sample,
+#cardsContainer.orange .card {
   background-color: #E66000;
 }
 
-[theme=lightOrange] .theme-sample {
+[theme=lightOrange] .theme-sample,
+#cardsContainer.lightOrange .card {
   background-color: #FF9500;
 }
 
-[theme=blue] .theme-sample {
+[theme=blue] .theme-sample,
+#cardsContainer.blue .card {
   background-color: #00539F;
 }
 
-[theme=lightBlue] .theme-sample {
+[theme=lightBlue] .theme-sample,
+#cardsContainer.lightBlue .card {
   background-color: #0095DD;
 }
 
-[theme=brown] .theme-sample {
+[theme=brown] .theme-sample,
+#cardsContainer.brown .card {
   background-color: #330000;
 }
 
-[theme=charcoal] .theme-sample {
+[theme=charcoal] .theme-sample,
+#cardsContainer.charcoal .card {
   background-color: #4D4E53;
 }
 

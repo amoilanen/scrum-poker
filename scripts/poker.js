@@ -44,6 +44,7 @@
   function Deck(cards) {
     var self = this;
 
+    this.container = null;
     this.activeCard = null;
     this.cards = [];
   }
@@ -52,6 +53,12 @@
     var self = this;
     var touchStart;
 
+    this.container = document.querySelector('#cardsContainer');
+    document.addEventListener('theme.selected', function(event) {
+      var theme = event.detail;
+
+      self.container.setAttribute('class', theme);
+    });
     document.addEventListener('touchstart', function(event) {
       if (!self.activeCard) {
         return;
@@ -148,10 +155,10 @@
     this.settingsDialogButton = document.querySelector('#settingsMenuItem');
 
     this.aboutMenuButton.addEventListener('click', function(event) {
-      self.aboutDialog.show();
+      self.aboutDialog.open();
     }, false);
     this.settingsDialogButton.addEventListener('click', function(event) {
-      self.settingsDialog.show();
+      self.settingsDialog.open();
     }, false);
     this.maximizeMenuButton.addEventListener('click', function(event) {
       self.maximize();
@@ -187,15 +194,15 @@
     this.acceptButton = this.dialog.querySelector('.button');
 
     this.acceptButton.addEventListener('click', function() {
-      self.hide();
+      self.close();
     });
   };
 
-  AboutDialog.prototype.show = function() {
+  AboutDialog.prototype.open = function() {
     this.dialog.classList.add('shown');
   };
 
-  AboutDialog.prototype.hide = function() {
+  AboutDialog.prototype.close = function() {
     this.dialog.classList.remove('shown');
   };
 
@@ -208,6 +215,7 @@
     this.dialog = null;
     this.acceptButton = null;
     this.cancelButton = null;
+    this.previousSelectedTheme = 'lightBlue';
     this.selectedTheme = 'lightBlue';
   }
 
@@ -218,10 +226,10 @@
     this.cancelButton = this.dialog.querySelector('.cancel-button');
 
     this.acceptButton.addEventListener('click', function() {
-      self.hide();
+      self.confirm();
     });
     this.cancelButton.addEventListener('click', function() {
-      self.hide();
+      self.cancel();
     });
 
     this.dialog.querySelector('ul').addEventListener('click', function(event) {
@@ -255,12 +263,27 @@
     }
   };
 
-  SettingsDialog.prototype.show = function() {
+  SettingsDialog.prototype.open = function() {
     this._renderSelection();
     this.dialog.classList.add('shown');
   };
 
-  SettingsDialog.prototype.hide = function() {
+  SettingsDialog.prototype.confirm = function() {
+    var event = new CustomEvent('theme.selected', {
+      'detail': this.selectedTheme
+    });
+
+    this.previousSelectedTheme = this.selectedTheme;
+    document.dispatchEvent(event);
+    this.close();
+  };
+
+  SettingsDialog.prototype.cancel = function() {
+    this.selectedTheme = this.previousSelectedTheme;
+    this.close();
+  };
+
+  SettingsDialog.prototype.close = function() {
     this.dialog.classList.remove('shown');
   };
 
@@ -279,9 +302,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   settingsDialog.init();
 }, false);
 
-//TODO: If inactive the maximized menu is again minimized after some timeout
-//TODO: Implement 'About', menu is not minimized in the background
-//TODO: Implement theme selection, menu is not minimized in the background
+
 //TODO: Theme is stored in the local storage so that even after app restart it stays unchanged
 
 //TODO: Bug. Landscape orientation, maximizing/minimizing menu, the maximize button is briefly shown at the left corner
