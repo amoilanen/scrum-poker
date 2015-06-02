@@ -256,7 +256,7 @@ body {
 }
 
 #settingsDialog ul li {
-  border-top: 1px solid rgba(166, 166, 166, 0.2);
+  border-bottom: 1px solid rgba(166, 166, 166, 0.2);
   padding-bottom: 8px;
   padding-left: 20px;
   padding-top: 8px;
@@ -277,7 +277,7 @@ body {
 }
 
 #settingsDialog ul li:last-child {
-  border-bottom: 1px solid rgba(166, 166, 166, 0.2);
+  border-bottom: none;
 }
 
 /*
