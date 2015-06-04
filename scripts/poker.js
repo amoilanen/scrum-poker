@@ -1,4 +1,7 @@
 'use strict';
+
+var THEME_LOCAL_STORAGE_ITEM = 'scrum.poker:theme';
+
 (function(host) {
 
   var MAX_SWIPE_DELTA_PX = 50;
@@ -38,7 +41,6 @@
 })(this);
 
 (function(host) {
-
   var MIN_SWIPE_DELTA_PX = 15;
 
   function Deck(cards) {
@@ -52,12 +54,18 @@
   Deck.prototype.init = function() {
     var self = this;
     var touchStart;
+    var currentTheme = localStorage ? localStorage.getItem(THEME_LOCAL_STORAGE_ITEM) : (void 0);
 
     this.container = document.querySelector('#cardsContainer');
+
+    this._updateThemeDisplay(currentTheme);
     document.addEventListener('theme.selected', function(event) {
       var theme = event.detail;
 
-      self.container.setAttribute('class', theme);
+      if (localStorage) {
+        localStorage.setItem(THEME_LOCAL_STORAGE_ITEM, theme);
+      }
+      self._updateThemeDisplay(theme);
     });
     document.addEventListener('touchstart', function(event) {
       if (!self.activeCard) {
@@ -81,6 +89,12 @@
       self._handleSwipe(touchEnd.clientX - touchStart.clientX);
     });
     this._readCards();
+  };
+
+  Deck.prototype._updateThemeDisplay = function(theme) {
+    if (typeof theme !== 'undefined') {
+      this.container.setAttribute('class', theme);
+    }
   };
 
   Deck.prototype._handleSwipe = function(swipeDeltaX) {
@@ -211,12 +225,16 @@
 
 (function(host) {
 
+  var DEFAULT_THEME = 'blue';
+
   function SettingsDialog() {
     this.dialog = null;
     this.acceptButton = null;
     this.cancelButton = null;
-    this.previousSelectedTheme = 'blue';
-    this.selectedTheme = 'blue';
+    this.previousSelectedTheme = localStorage ?
+      localStorage.getItem(THEME_LOCAL_STORAGE_ITEM)
+      : DEFAULT_THEME;
+    this.selectedTheme = this.previousSelectedTheme;
   }
 
   SettingsDialog.prototype.init = function() {
