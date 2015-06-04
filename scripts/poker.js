@@ -215,8 +215,8 @@
     this.dialog = null;
     this.acceptButton = null;
     this.cancelButton = null;
-    this.previousSelectedTheme = 'lightBlue';
-    this.selectedTheme = 'lightBlue';
+    this.previousSelectedTheme = 'blue';
+    this.selectedTheme = 'blue';
   }
 
   SettingsDialog.prototype.init = function() {
