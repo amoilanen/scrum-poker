@@ -319,18 +319,3 @@ document.addEventListener('DOMContentLoaded', function(event) {
   aboutDialog.init();
   settingsDialog.init();
 }, false);
-
-
-//TODO: Theme is stored in the local storage so that even after app restart it stays unchanged
-
-//TODO: Bug. Landscape orientation, maximizing/minimizing menu, the maximize button is briefly shown at the left corner
-
-//TODO: Test plan
- //- Navigatine left/right
- //- Opening/closing cards by clicking on them
- //- Menu bar should automatically hide if inactive
- //- About menu
- //- Settings menu
- // -- Selecting a color, OK
- // -- Selecting a color, Cancel
- //- Landscape/portrait mode for the device
